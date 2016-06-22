@@ -5,8 +5,8 @@
 module Option
   class Put < Model
 
-    def initialize
-      super(:put)
+    def initialize(&blk)
+      super(:put, &blk)
     end
     
   end

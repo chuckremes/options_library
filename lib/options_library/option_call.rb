@@ -5,8 +5,8 @@
 module Option
   class Call < Model
 
-    def initialize
-      super(:call)
+    def initialize(&blk)
+      super(:call, &blk)
     end
     
   end
