@@ -2,21 +2,37 @@
 
 Gem::Specification.new do |s|
   s.name = %q{options_library}
-  s.version = "1.0.3"
+  s.version = "1.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dan Tylenda-Emmons"]
-  s.date = %q{2011-02-17}
-  s.description = %q{A gem used to calc the price of an option.}
+  s.date = %q{2016-06-22}
+  s.description = %q{A gem used to calc the price of call and put options.}
   s.email = %q{jrubyist@gmail.com}
-  s.extra_rdoc_files = ["README.md", "lib/options_library.rb", "lib/options_library/option_calculator.rb", "lib/options_library/option_call.rb", "lib/options_library/option_model.rb", "lib/options_library/option_put.rb"]
-  s.files = ["Manifest", "README.md", "Rakefile", "lib/options_library.rb", "lib/options_library/option_calculator.rb", "lib/options_library/option_call.rb", "lib/options_library/option_model.rb", "lib/options_library/option_put.rb", "options_library.gemspec", "options_library/options_library.iml"]
+  s.extra_rdoc_files = [
+    "README.md",
+    "lib/options_library.rb",
+    "lib/options_library/option_calculator.rb",
+    "lib/options_library/option_call.rb",
+    "lib/options_library/option_model.rb",
+    "lib/options_library/option_put.rb"]
+  s.files = [
+    "Manifest",
+    "README.md",
+    "lib/options_library.rb",
+    "lib/options_library/option_calculator.rb",
+    "lib/options_library/option_call.rb",
+    "lib/options_library/option_model.rb",
+    "lib/options_library/option_put.rb",
+    "options_library.gemspec"]
   s.homepage = %q{http://github.com/codertrader/options_library}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Options_library", "--main", "README.md"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{options_library}
   s.rubygems_version = %q{1.5.2}
-  s.summary = %q{A gem used to calc the price of an option.}
+  s.summary = %q{A gem used to calc the price of call and put options. Can also produce all of the greeks and will compute
+  implied volatility given a target price.}
+  s.license = "0BSD"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
